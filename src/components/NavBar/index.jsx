@@ -1,5 +1,5 @@
 import React from 'react';
-import { LogIn } from 'lucide-react';
+import Link from 'next/link';
 
 const Navbar = () => (
   <nav className="w-full bg-green-50 py-4">
@@ -10,7 +10,12 @@ const Navbar = () => (
       {/* Navigation Links (Hidden on small screens) */}
       <ul className="hidden md:flex space-x-6 text-green-800">
         <li><a href="#pricing" className="hover:text-green-600">Pricing</a></li>
-        <li><a href="#blog" className="hover:text-green-600">Blog</a></li>
+        <li>
+          <Link
+            href={'/blog'} className="hover:text-green-600">
+            Blog
+          </Link>
+        </li>
         <li><a href="#contact" className="hover:text-green-600">Contact</a></li>
       </ul>
 
