@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { about, careers, connect } from '@/constants/links';
+import { legal, resources, connect } from '@/constants/links';
 import { Mail } from 'lucide-react';
 
 const Footer = () => {
@@ -60,9 +60,9 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-semibold mb-4 text-white">About</h4>
+            <h4 className="font-semibold mb-4 text-white">Legal</h4>
             <ul className="space-y-3">
-              {about.map(({ label, path }) => (
+              {legal.map(({ label, path }) => (
                 <li key={label}>
                   <Link
                     href={path}
@@ -77,9 +77,9 @@ const Footer = () => {
 
           {/* Resources */}
           <div>
-            <h4 className="font-semibold mb-4 text-white">Careers</h4>
+            <h4 className="font-semibold mb-4 text-white">Resources</h4>
             <ul className="space-y-3">
-              {careers.map(({ label, path }) => (
+              {resources.map(({ label, path }) => (
                 <li key={label}>
                   <Link
                     href={path}

@@ -9,7 +9,6 @@ const Navbar = () => (
 
       {/* Navigation Links (Hidden on small screens) */}
       <ul className="hidden md:flex space-x-6 text-green-800">
-        <li><a href="#about" className="hover:text-green-600">About</a></li>
         <li><a href="#pricing" className="hover:text-green-600">Pricing</a></li>
         <li><a href="#blog" className="hover:text-green-600">Blog</a></li>
         <li><a href="#contact" className="hover:text-green-600">Contact</a></li>
