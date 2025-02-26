@@ -25,7 +25,7 @@ const Footer = () => {
               </p>
             </div>
 
-            <form onSubmit={handleSubscribe} className="flex w-full md:w-auto gap-2">
+            <form onSubmit={handleSubscribe} className="flex flex-wrap w-full md:w-auto gap-2">
               <div className="flex items-center bg-white rounded-lg px-4 py-2 w-full md:w-80">
                 <Mail size={18} className="text-[#07b084] mr-2" />
                 <input
@@ -39,11 +39,12 @@ const Footer = () => {
               </div>
               <button
                 type="submit"
-                className="bg-[#07b084] hover:bg-[#06946d] text-white px-6 py-2 rounded-lg transition-colors"
+                className="w-full md:w-auto bg-[#07b084] hover:bg-[#06946d] text-white px-6 py-2 rounded-lg transition-colors"
               >
                 Subscribe
               </button>
             </form>
+
           </div>
         </div>
       </div>

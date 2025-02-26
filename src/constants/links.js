@@ -13,7 +13,7 @@ export const connect = [
   ];
 
   export const resources = [
-    { label: 'Blogs', path: '/blogs' },
+    { label: 'Blogs', path: '/blog' },
   ];
 
 
